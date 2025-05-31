@@ -1,0 +1,5 @@
+ATM chose option:
+
+1 - Withdraw from account
+2 - Remittance to account
+3 - Exit
