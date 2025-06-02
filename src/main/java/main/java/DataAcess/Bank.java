@@ -1,8 +1,10 @@
-package ATMsimulator;
+package main.java.DataAcess;
+
+import main.java.Accounts.User;
 
 import java.util.*;
 
-public class Bank {
+public class Bank implements BankRepository {
     private static Bank instance;
 
     private final Map<String, User> bankUsers = new HashMap<String, User>();

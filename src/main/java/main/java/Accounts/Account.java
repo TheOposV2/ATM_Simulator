@@ -1,7 +1,5 @@
-package ATMsimulator;
+package main.java.Accounts;
 
-
-//Account
 interface Account {
 
     String getPassword();
@@ -9,8 +7,8 @@ interface Account {
     String getLogin() ;
     void setLogin(String login);
     Double getBalance();
-    void withdraw(Double withdrawAmount);
-    void remittance(Double remittanceAmount);
+    boolean withdraw(Double withdrawAmount);
+    boolean remittance(Double remittanceAmount);
 
 
 }

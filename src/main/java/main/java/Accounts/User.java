@@ -1,7 +1,6 @@
-package ATMsimulator;
+package main.java.Accounts;
 
 
-// default account balance login passwords
 public class User implements Account {
     private String password;
     private String login;
@@ -33,19 +32,20 @@ public class User implements Account {
         return balance;
     }
 
-    public void withdraw(Double withdrawAmount) {
+
+    public boolean withdraw(Double withdrawAmount) {
         if (balance >= withdrawAmount) {
             balance -= withdrawAmount;
-            System.out.println("Withdraw completed");
+            return true;
         } else {
-            System.out.println("Withdraw failed");
+            return false;
         }
     }
 
-    public void remittance(Double remittanceAmount) {
+    public boolean remittance(Double remittanceAmount) {
 
         this.balance = this.balance + remittanceAmount;
-        System.out.println("Remittance completed");
+        return true;
 
     }
 

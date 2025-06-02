@@ -1,7 +1,9 @@
-package ATMsimulator;
+package main.java.AccountServices;
 
+import main.java.Accounts.User;
+import main.java.DataAcess.Bank;
 
-public class UserServices{
+public class UserServices implements SessionManager{
     private String login;
     private final Bank bank = Bank.getInstance();
 
@@ -14,16 +16,14 @@ public class UserServices{
         return false;
     }
 
-    public Double userWithdraw(Double balanceChange){
+    public boolean userWithdraw(Double balanceChange){
         User user =  bank.getBankUsers().get(getSession());
-        user.withdraw(balanceChange);
-        return user.getBalance();
+        return user.withdraw(balanceChange);
     }
 
-    public Double userRemittance(Double balanceChange){
+    public boolean userRemittance(Double balanceChange){
         User user =  bank.getBankUsers().get(getSession());
-        user.remittance(balanceChange);
-        return user.getBalance();
+        return user.remittance(balanceChange);
     }
 
     public void setSession(String login){
@@ -42,5 +42,9 @@ public class UserServices{
 
     public double getBalance(){
         return bank.getUser(getSession()).getBalance();
+    }
+
+    public boolean isUserExisting(String login){
+        return bank.getUser(login) != null;
     }
 }

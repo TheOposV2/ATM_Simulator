@@ -1,4 +1,7 @@
-package ATMsimulator;
+package main.java;
+
+import main.java.AccountServices.UserServices;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -96,12 +99,12 @@ public class AtmInterface {
                 case(1):
                     System.out.println("Amount to withdraw:");
                     balanceChange = scanner.nextDouble();
-                    System.out.println(services.userWithdraw(balanceChange));
+                    System.out.println("Operation succeed: " + services.userWithdraw(balanceChange));
                     break;
                 case(2):
                     System.out.println("Amount to remittance:");
                     balanceChange = scanner.nextDouble();
-                    System.out.println(services.userRemittance(balanceChange));
+                    System.out.println("Operation succeed: " + services.userRemittance(balanceChange));
                     break;
                 case(3):
                     System.out.println("See you again");
@@ -110,10 +113,6 @@ public class AtmInterface {
                     System.out.println("Wrong option!");
                     break;
             }
-
         }
-
-
     }
-
 }
