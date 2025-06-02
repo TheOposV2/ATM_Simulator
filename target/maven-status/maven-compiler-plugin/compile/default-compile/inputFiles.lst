@@ -1,7 +1,7 @@
-C:\Users\Wojtek\IdeaProjects\Atm_Simulator\src\main\java\main\java\Accounts\Account.java
-C:\Users\Wojtek\IdeaProjects\Atm_Simulator\src\main\java\main\java\Accounts\User.java
-C:\Users\Wojtek\IdeaProjects\Atm_Simulator\src\main\java\main\java\AtmInterface.java
-C:\Users\Wojtek\IdeaProjects\Atm_Simulator\src\main\java\main\java\DataAcess\Bank.java
-C:\Users\Wojtek\IdeaProjects\Atm_Simulator\src\main\java\main\java\DataAcess\BankRepository.java
-C:\Users\Wojtek\IdeaProjects\Atm_Simulator\src\main\java\main\java\SessionManager.java
-C:\Users\Wojtek\IdeaProjects\Atm_Simulator\src\main\java\main\java\UserServices.java
+C:\Users\Wojtek\IdeaProjects\Atm_Simulator\src\main\java\atm\accounts\Account.java
+C:\Users\Wojtek\IdeaProjects\Atm_Simulator\src\main\java\atm\accounts\User.java
+C:\Users\Wojtek\IdeaProjects\Atm_Simulator\src\main\java\atm\dataaccess\Bank.java
+C:\Users\Wojtek\IdeaProjects\Atm_Simulator\src\main\java\atm\dataaccess\BankRepository.java
+C:\Users\Wojtek\IdeaProjects\Atm_Simulator\src\main\java\atm\services\SessionManager.java
+C:\Users\Wojtek\IdeaProjects\Atm_Simulator\src\main\java\atm\services\UserServices.java
+C:\Users\Wojtek\IdeaProjects\Atm_Simulator\src\main\java\atm\ui\AtmInterface.java

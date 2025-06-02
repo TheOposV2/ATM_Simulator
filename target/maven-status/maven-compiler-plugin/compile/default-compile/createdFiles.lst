@@ -1,5 +1,7 @@
-main\java\Accounts\User.class
-main\java\DataAcess\BankRepository.class
-main\java\Accounts\Account.class
-main\java\DataAcess\Bank.class
-main\java\SessionManager.class
+atm\accounts\User.class
+atm\dataaccess\BankRepository.class
+atm\services\UserServices.class
+atm\ui\AtmInterface.class
+atm\dataaccess\Bank.class
+atm\services\SessionManager.class
+atm\accounts\Account.class
